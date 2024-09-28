@@ -1,4 +1,4 @@
-const apiKey = "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";
+const apiKey = "YOUR_API_KEY";
 
 const maxImages = 8; 
 let selectedImageNumber = null;
@@ -36,7 +36,7 @@ async function generateImages(input) {
         const prompt = `${input} ${randomNumber}`;
 
         const response = await fetch(
-            "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev",  //stabilityai/stable-diffusion-xl-base-1.0
+            "https://api-inference.huggingface.co/models/",  
             {
                 method: "POST",
                 headers: {
